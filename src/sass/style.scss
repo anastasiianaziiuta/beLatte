@@ -1,0 +1,22 @@
+@import "fonts";
+@import "variables";
+@import "header";
+@import "about";
+@import "menu";
+@import "testimonials";
+@import "contacts";
+@import "footer";
+@import "modal";
+@import "media";
+
+* {
+    box-sizing: border-box;
+}
+.pageup{
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}

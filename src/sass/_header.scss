@@ -1,0 +1,88 @@
+.header{
+    min-height: 700px;
+    background: url('../img/bg_header.jpg') center ( center / cover ) no-repeat;
+    header {
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.35);
+        padding: 20px 322px 42px 417px;
+    }    
+    &__nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        li{
+            a {
+            font-family: 'Playfair Display Bold', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            color: #ffffff;
+            text-decoration: none;
+                &:hover {
+                    color: $main-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &__title {
+        margin-top: 200px;
+        margin-left: 116px;
+        font-family: 'Playfair Display Bold', sans-serif;
+        font-size: 48px;
+        font-weight: bold;
+        text-align: left;
+        color: #f5d76e;
+    }
+    &__subtitle {
+        margin-top: 27px;
+        margin-left: 125px;
+        width: 436px;
+        font-family: 'Lato Medium', sans-serif;
+        font-size: 16px;
+        text-align: left;
+        color: #ffffff;
+    }
+    &__btn {
+        margin-top: 38px;
+        margin-left: 125px;
+        width: 185px;
+        height: 54px;
+        background: transparent;
+        border: 2px solid  #ffffff;
+        font-family: 'Lato Heavy', sans-serif;
+        font-size: 13px;
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        outline: none !important;
+        &:hover, :active, :focus, :visited {
+            outline: none !important;
+        }
+    }
+}
+.hamburger{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+    img{
+        width: 100px;
+    }
+    &_active{
+        display: none;
+        position: fixed;
+        z-index: 2;
+        right: 30px;
+        top: 10px;
+        cursor: pointer;
+        img{
+            width: 100px;
+        }
+    }
+}
+
